@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: 0;
+    outline: 0;
+}
+
+body {
+    font-family: cursive;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #f4f3ea;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.logo img{
+    margin-left: 30px;
+    width: 60px;
+}
+
+nav {
+    display: flex;
+    
+}
+
+nav a {
+    color: #e73b16;
+    font-family: "Single Day", cursive;
+    font-size: 1.5rem;
+    margin-left: 3rem;
+    font-weight: 300;
+    font-style: normal;
+    transform: 0.3s ease;
+    text-transform: none;
+    border-bottom: 3px solid transparent;
+}
+
+nav a.active {
+    color: #3d2b14;
+    
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem; 
+}
+
+nav a:hover,
+nav a:active {
+    color: #3d2b14;
+    
+}
+
+nav a:link, .logo {
+    text-decoration: none;
+}
+
+header {
+    background-color: antiquewhite;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 11%;
+    padding: 1rem 3%;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
+}
+
+section {
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+
+
+
+.footer {
+    background-color: #e9b943;
+    color: #3d2b14;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  
+  .footer h2 {
+    font-family: "Single Day", cursive;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer p {
+    font-family: "Single Day", cursive;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .social-icons img {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icons img:hover {
+    transform: scale(1.2);
+  }
+  
+  .footer-bottom {
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+  
+/*** footer ***/
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: left;
+}
+  
+.footer-left {
+    flex: 1;
+}
+  
+.footer-right {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    flex: 1;
+}
+  
+.footer h2{
+    color: #e73b16;
+}
+
+.footer h2,
+.footer p {
+    margin: 0 0 0.5rem 0;
+}
+
+  
+.footer .email {
+    text-align: center;
+    font-size: 0.9rem;
+    font-family: "Single Day", cursive;
+    color: #3d2b14;
+    margin-top: -1rem;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: left;
+}
+  
+.footer-left,
+.footer-right {
+    flex: 1;
+}
+  
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+  
+.email {
+    margin-top: 0.5rem;
+    font-family: "Single Day", cursive;
+    font-size: 0.9rem;
+    color: #3d2b14;
+}
+  
+/*** home ***/
+/* General Reset */
+
+
+/* Home Section */
+#home {
+    padding: 60px 20px;
+    background-color: #fff0e6;
+    display: flex;
+    justify-content: center;
+}
+
+#home > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    gap: 40px;
+    flex-wrap: wrap; /* for responsiveness */
+}
+
+/* Left Side - Text */
+.home-text {
+    flex: 1;
+    text-align: left;
+}
+
+.home-text h1 {
+    font-size: 3rem;
+    color: #d62828;
+}
+
+.home-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
+    padding: 10px 0;
+}
+
+.home-text span {
+    font-weight: bold;
+    color: #f77f00;
+}
+
+/* Right Side - Image */
+#home img {
+    flex: 1;
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+}
+
+/* Button */
+.home-text button {
+    font-family: cursive;
+    margin-top: 20px;
+    padding: 14px 36px;
+    background-color: #d62828;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.home-text button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    background-color: #d62828;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    #home > div {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .home-text {
+        text-align: center;
+    }
+}
+
+/*** making the pizza ***/
+
+/* General section styling */
+#make {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #fff8f2;
+}
+
+#make h1 {
+    font-size: 2.5rem;
+    color: #d62828;
+    margin-bottom: 40px;
+}
+
+#make h2 {
+    font-size: 1.8rem;
+    color: #d62828;
+    margin-bottom: 20px;
+}
+
+/* Dough section */
+.dough,
+.toppings {
+    margin-bottom: 40px;
+}
+
+/* Image Grid Layout */
+.dough-images, .meat-images, .veggie-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Style for images */
+.dough-images img, .meat-images img, .veggie-images img {
+    width: 150px; /* Set uniform size */
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect on images */
+.dough-images img:hover, .meat-images img:hover, .veggie-images img:hover {
+    transform: scale(1.1);
+}
+
+/* Centering the content */
+#make h1 {
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .dough-images img, .meat-images img, .veggie-images img {
+        width: 120px; /* Resize for smaller screens */
+        height: 120px;
+    }
+}
+
+
